@@ -1,0 +1,29 @@
+*{
+ margin:0;
+ padding:0;
+}
+ 
+
+ /* Iniciando o estudo design responsivo */
+
+ /* porcentagem em margin e padding */
+
+ /* TUDO gira em torno da largura do elemento pai,
+ tanto a margem quanto o espaçamento interno e largura do elemento filho
+ dependem dessa medida. */
+
+
+.pai{
+	width: 50%; /* Espaço da tela  */
+	height: 400px;
+	background-color: orange;
+}
+
+.filho{
+	width: 50%; /* 50% de 50% do espaço de tela na horizontal do elemento pai */
+	padding-left:25%; /* espaçamento interno 25% de 50% do tamanho da largura do elemento pai */
+	margin-top: 20%; /* margem 20% de 50% do tamanho da largura do elemento pai */
+	height: 200px;
+	display: inline-block;
+	background-color: gray;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Introdução Canvas</title>
+</head>
+<style>
+	.container{
+	text-align: center;
+		margin: 0 auto; /* Deixar o conteúdo centralizado */
+		max-width: 1280px; /*Definir contexto máximo */
+		padding: 0 2%; /*Aplicando certo espaçamento */
+	}
+</style>
+<body>
+<!-- 
+Canvas é um elemento da HTML5 destinado a delimitar uma área para renderização dinâmica de gráficos. Todo o trabalho de criação e animação é realizado através de linguagens de programação dinâmica. O elemento foi originalmente introduzido pela Apple Inc. para o navegador Safari.
+
+O elemento HTML <canvas> é usado para desenhar gráficos, no documento, via JavaScript.
+
+O elemento <canvas> é só um container para gráficos. Você deve usar o JavaScript para de fato desenhar os gráficos.
+
+Canvas tem um bocado de metodos para desenhar paths, boxes, circulos, textos, e adicionar imagens.
+
+*Note: Sempre espcifique um atributo id (para estar se referindo ao elemento em script), e o atributo width e height para definir o tamanho do canvas. Para adicionar uma borda, use o atributo style.
+-->
+
+<!--  A marcação do Elemento canvas -->
+<div class="container">
+<canvas id="myCanvas" width="800" height="500" style="border:1px solid purple; padding: 40px 30px; text-align: center;">
+Your browser does not support the HTML canvas tag.</canvas>
+</div>
+<script>
+//Linhas
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");// Definindo o contexto como 2D 
+ctx.moveTo(0,0);// Ponto de início - left top 
+ctx.lineTo(800,500);// ctx.lineTo(X,Y) 
+ctx.moveTo(500,0);// Ponto de início 
+ctx.lineTo(300,500);// ctx.lineTo(X,Y) 
+ctx.stroke();
+
+//Circulo
+ctx.beginPath();// para que a linha não entre em conflito com o circulo 
+ctx.arc(250,250,200,1,2*Math.PI);//Construindo um circulo  ctx.arc(X,Y,ÁREA,APAGA O CIRCULO EM PARTES, definição para circulo completo); 
+ctx.stroke();
+
+//Strings
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+ctx.stroke();
+</script>
+
+</body>
+</html>

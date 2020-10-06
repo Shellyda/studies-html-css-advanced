@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+/* usando medidas não flexiveis para ser mais facíl de representar */
+.slider{
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      background: white;
+      position: relative; 
+     }
+
+     /* Quando queremos que nossa tag filho fique relativa, totalmente, as dimensões da tag pai, usamos uma sacada para preenchimento
+      tag pai -> position: relative; tag filho -> position: absolute;*/
+
+.box{
+	position: absolute;
+	width: 100%; height: 100%; /* ter as msm medidas do pai tanto pra largura e altura. */
+}
+
+/* A propriedade funciona tornando prioridade aqueles que tem maiores valores do z-index, por padrão todas as tags tem um valor definido para o z-index.*/
+ /* fazendo as boxs se moverem pra esquerda para perceber que estão todas contidas no elemento pai, como definimos acima e seguem uma linha de prioridade, onde a div com maior z-index é a primeira a ser mostrada na tela.
+ Redefinindo sua posição original.*/
+.one{
+    background-color: pink;  
+    z-index: 4; /* MAIOR Z-INDEX */
+}
+
+.two{
+     background-color: purple;
+     z-index: 3;
+     left: 30px;
+}
+
+.three{
+   background-color: blue;
+   z-index: 2;
+   left: 60px;
+}
+
+.for{
+   background-color: green;
+   z-index: 1; /* MENOR Z-INDEX */
+   left: 90px;
+}

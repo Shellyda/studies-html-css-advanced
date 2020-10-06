@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introdução a propriedade Filter</title>
+	<meta charset="utf-8" />
+
+	<!-- A propriedade filter define efeitos visuais (como blur e saturação) em um elemento (geralmente <img>). -->
+
+<style>
+.container{
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 2%;
+	max-width: 1280px;
+}
+
+/*Aplicando o Filter na imagem */
+img {
+  filter: grayscale(50%) /* Deixa a imagem em preto em branco*/
+  blur(1px)/* Aplica um efeito de desfoque à imagem. Um valor maior criará mais desfoque. Se nenhum valor for especificado, 0 será usado.*/
+  brightness(120%)/*Ajusta o brilho da imagem. 0% tornará a imagem completamente preta. 100% (1) é o padrão e representa a imagem original. Valores acima de 100% fornecerão melhores resultados. */
+  contrast(100%)/*Ajusta o contraste da imagem. 0% tornará a imagem completamente preta. 100% (1) é o padrão e representa a imagem original. Valores acima de 100% fornecerão resultados com mais contraste.*/
+  ;
+}
+
+/* Temos vários outros efeitos mas no momento vamos exemplificar apenas esses acima! */
+</style>
+</head>
+<body>
+<div class="container">
+
+<img src="img_filter.png" alt="pepe" width="500" height="360">
+
+<p><strong>Note:</strong> Essa propriedade não é suportada em Edge 12 ou Internet Explorer.</p>
+
+
+
+</div><!-- container -->
+</body>
+</html>

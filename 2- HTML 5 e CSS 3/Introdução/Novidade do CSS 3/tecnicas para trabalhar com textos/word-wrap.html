@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 150px; 
+  border: 1px solid #000000;
+}
+
+div.a {
+  word-wrap: normal;
+}
+
+div.b {
+  word-wrap: break-word;
+}
+</style>
+</head>
+<body>
+
+<h1>The word-wrap Property</h1>
+
+<h2>word-wrap: normal (default):</h2>
+<div class="a"> Essaéumapalavra longaaaaaaaaaaaaaaaaaa. As palavras vão quebrar de acordo com as regras usuais. </div>
+
+<h2>word-wrap: break-word:</h2>
+<div class="b"> Essaéumapalavralongaaaaa. Este texto vai ser quebrado para caber dentro da box sem ultrapassar o limite.</div>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <!-- ESTRUTURA DE METATAGS DO HTML 5 -->
+	<head>
+		<title>Meu Site</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Descrição do meu site." />
+		<meta name="keywords" content="palavras,separadas,por,virgula" />
+		<meta name="author" content="Guilherme">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		<link href="css/transform2D.css" rel="stylesheet" /> 
+
+<!-- É uma tecnlogia experimental, então, é importante sempre procurar o suporte desse tipo de código nos navegadores.
+ -->
+
+<!-- Transform, nova propriedade do CSS 3. Permite a manipulação dos movimentos e animações do nosso elementos. Hj vamos ver transforms 2D.
+
+*transform: translate(X,Y); 
+
+O metodo translate() permite a mudança de posição de um elemento, segundo os valores dados para os eixos X e Y. Pense na origem (0,0) do gráfico localizado no centro da box do elemento, então ele vai se mover levando em consideração esse sentido. 
+
+obs:
+para que funcione em todos navegadores importante essa nomeclatura. (-ms-)
+
+-ms-transform: translate(50px,100px); /* IE 9 */
+  transform: translate(50px,100px);
+
+Nesse exemplo de cima, o objeto se move 50px para a direita e 100px para baixo. caso fosse -50px e -100px, ele se moveria 50px para esquerda e 100px para cima. Levando sempre em consideração o próprio centro.
+
+
+*transform: rotate();
+
+O metodo rotate() permite a rotação do nosso elemento. Usando a nomeclatura de graus(degrees = deg). Levando em consideração o centro do elemento, rotacionando no sentido anti-horário ou horário.
+
+obs:
+para que funcione em todos navegadores importante essa nomeclatura. (-ms-)
+
+ -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg)
+
+Nesse exemplo de cima, o objeto é rotacionado no sentido horário em 20graus. caso fosse -20deg então seria rotacionado no sentido anti-horário em 20 graus.
+
+
+
+*transform: scale(width,height);
+
+scale = escala.
+
+O metodo scale() permite aumentar ou diminuir as dimensões da box do nosso elemento. De acordo aos valores dados para a nova largura e altura do objeto.
+
+obs:
+para que funcione em todos navegadores importante essa nomeclatura. (-ms-)
+
+.objetooriginal{
+width: 300px;
+height: 400px;
+-ms-transform: scale(2,3); /* IE 9 */
+  transform: scale(2,3);
+}
+
+Nesse exemplo de cima, o novo elemento vai ter a largura 2 vezes maior e altura 3 vezes maior que as do elemento original. (600px,800px)
+
+Neste próximo exemplo, o novo elemento vai ter a largura e altura sendo metade da medidas do elemento original. (150px,200px)
+
+.objetooriginal{
+width: 300px;
+height: 400px;
+  -ms-transform: scale(0.5,0.5); /* IE 9 */
+  transform: scale(0.5,0.5);
+}
+
+
+**scaleX(); diminue ou aumenta a largura do objeto original.
+
+.objetooriginal{
+  width: 200px;
+  height: 100px;
+  -ms-transform: scaleX(2); /* IE 9 */
+  transform: scaleX(2); -> aumentou em 2 vezes a largura do elemento.
+}
+
+
+**scaleY(); diminue ou aumenta a altura do objeto original.
+
+.objetooriginal{
+width: 200px;
+height: 100px;
+  -ms-transform: scaleY(3); /* IE 9 */
+  transform: scaleY(3); -> aumentou em 3 vezes a altura do elemento.
+}
+
+
+
+
+
+*transform: skew(X,Y);
+
+O metodo skew() permite a inclinação dos objetos. com o uso da nomeclatura de graus(degrees = deg). Leva em consideração o lado esquerdo do elemento e os eixos do gráfico, move o objeto no sentido horário ou anti-horário.
+
+obs:
+
+.objetooriginal{
+width: 300px;
+height: 100px;
+-ms-transform: skew(20deg,10deg); /* IE 9 */
+  transform: skew(20deg,10deg); 
+}
+
+Nesse exemplo de cima, o objeto é inclinado 20 graus em relação ao eixo X e 10 graus em relação ao eixo Y para o sentido horário.
+
+**transform: skewY();
+
+O metodo skewY() permite a inclinação dos objetos. com o uso da nomeclatura de graus(degrees = deg). Leva em consideração o lado esquerdo do elemento e apenas o eixo Y do gráfico, move o objeto no sentido horário ou anti-horário em relação ao eixo das ordenadas(Y).
+
+obs:
+para que funcione em todos navegadores importante essa nomeclatura. (-ms-)
+
+.objetooriginal{
+width: 200px;
+height: 100px;
+-ms-transform: skewY(20deg); /* IE 9 */
+  transform: skewY(20deg);
+}
+
+Nesse exemplo de cima, o objeto é movido 20 graus no sentido horário em relação o eixo Y.
+
+
+
+**transform: skewX();
+
+O metodo skewX() permite a inclinação dos objetos. com o uso da nomeclatura de graus(degrees = deg). Leva em consideração o lado esquerdo do elemento e apenas o eixo X do gráfico, move o objeto no sentido horário ou anti-horário em relação ao eixo das ordenadas(X).
+
+obs:
+para que funcione em todos navegadores importante essa nomeclatura. (-ms-)
+
+.objetooriginal{
+width: 200px;
+height: 100px;
+-ms-transform: skewX(20deg); /* IE 9 */
+  transform: skewX(20deg);
+}
+
+Nesse exemplo de cima, o objeto é movido 20 graus no sentido horário em relação o eixo X.
+
+
+
+
+***PROPRIEDADE IMPORTANTE***
+
+O metodo matrix() combina TODOS os metodos do transform em um só.
+contém os 6 parametros, tem funções matemáticas,as quais permitem vc rotacionar, mudar a escala, mover(translate), e os elementos de inclinação.
+                     
+transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY());
+
+Um exemplo prático:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv1 {
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+  transform: matrix(1, -0.3, 0, 1, 0, 0); 
+}
+
+div#myDiv2 {
+  -ms-transform: matrix(1, 0, 0.5, 1, 150, 0); /* IE 9 */
+  transform: matrix(1, 0, 0.5, 1, 150, 0); 
+}
+
+</style>
+</head>
+<body>
+
+<h1>USANDO O METODO MATRIZ.</h1>
+<p>O metodo matrix() combina TODOS os metodos do transform em um só.
+</p>
+
+<div>
+ESSA É UMA DIV NORMAL.
+</div>
+
+<div id="myDiv1">
+USANDO O METODO MATRIZ.
+</div>
+
+
+ -->
+
+</head> <!-- Base teórica -->
+<body>
+
+
+<!-- Exemplo prático -->
+
+<div class="transform">
+		Perceba o uso de transition antes do início da animação, o controle dos frames com keyframes e o uso do transform para mover o objeto para o centro da tela e sua rotação no próprio eixo. 
+</div><!--transform-->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

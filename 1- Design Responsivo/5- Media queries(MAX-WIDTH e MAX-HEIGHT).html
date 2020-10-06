@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Título do meu site</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"> <!-- Importante meta tag para o design responsivo!! Fazendo com que o navegador indentifique a largura do tipo de tela que o usuário possue(Área disponível para renderizar, no caso toda a largura do viewport do dispositivo), definindo também uma escala inicial e máxima de 1.0(Nível de zoom). -->
+
+
+<!-- Exemplos para Introdução do tema de media queries: 
+
+  Media queries are a popular technique for delivering a tailored style sheet to different devices. To demonstrate a simple example, we can change the background color for different devices.
+
+
+ @media screen and (MAX-WIDTH: CONDIÇÃO) LARGURA MAXIMA 
+
+ obs: existe o @media screen and (MAX-HEIGHT: condição) ALTURA MAXIMA segue a msm lógica. -->
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo da barra de navegação  */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Estilo dos links na barra de navegação*/
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* mudar cor ao passar o mouse por cima */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Em telas de 600px ou menos os links ficarão um em cima do outro, deixando de ficar lado a lado. (Tirando o efeito do float)*/
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Menu de navegação Responsivo!</h2>
+<p>Redimensione o navegador para ver o efeito: Quando a tela é menor que 600px ou igual a 600px, O menu de navegação será organizado verticalmente, deixando de ser horizontal.</p>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Título do meu site</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"> 
+
+<style>
+body {
+  background-color: tan;
+  color: black;
+}
+
+/* Em telas com a largura de 992px ou menos ,o background-color é azul. */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+}
+
+/* Em telas com a largura de 600px ou menos, o background-color é olive.*/
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    color: white;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Redimensione a tela do seu navegador para ver o efeito!</h1>
+<p>Por definição padrão, a background-color do documento é "tan". Se a tela for do tamanho de 992px ou menos, a cor irá mudar para azul. Se o tamanho da tela for 600px ou menos, vai mudar pra olive. Interessante notar que não a conflito entre as duas medias, funcionam juntas!</p>
+
+</body>
+</html>
+-->

@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <!-- ESTRUTURA DE METATAGS DO HTML 5 -->
+	<head>
+		<title>Meu Site</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Descrição do meu site." />
+		<meta name="keywords" content="palavras,separadas,por,virgula" />
+		<meta name="author" content="Guilherme">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		<!-- <link href="css/style.css" rel="stylesheet" /> -->
+		
+
+		<!-- Propriedade nova do CSS 3, Opacidade. Um meio alternativo ao rgb() e rgba().
+		
+		Afeta o elemento pai e seus filhos.
+
+		 -->
+
+		<style>
+			.box{
+				position: relative;
+				width: 300px;
+				height: 300px;
+				margin: 0 auto;
+				
+			
+			}
+
+			.img img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+			}
+
+			.frase{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2; /* fazendo a frase ficar por cima da imagem */
+				width: 100%;
+				height: 100%;
+				transition: 1s;
+				background-color: purple;
+				font-size: 25px;
+				font-weight: bold;
+			}
+
+			.frase:hover{
+				opacity: 0.4;
+			}
+		
+		</style>
+
+	</head>
+
+	<body>
+
+	<div class="box">
+
+	<div class="img"><img src="imagens/alan.jpg"></div> <!--img -->
+	<div class="frase"><p>Óla mundo!</p></div><!-- frase -->
+	
+	</div><!-- box -->
+
+	</body>
+
+</html>
+

@@ -1,0 +1,87 @@
+
+<!-- Mais sobre linear gradients 
+
+**Sobre as cores, podemos usar para determinar elas com as seguintes nomeclaturas: hexadecimal, rgb, rgba(para causar efeitos de transparência) e como já visto chamando pelo o nome ( red, purple, blue...).
+
+background: linear-gradient(#ccc, rgb(300,300,300), rgba(0,0,0,0.7), red);
+
+Efeito de transparência com linear gradient usando rgba, exemplo prático:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); 
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Transparency</h1>
+<p>Para add transparência, nós usamos a função rgba() para definir as cores. O último paramêtro no rgba() pode ter os valores de 0 a 1, e isso define a transparência da cor: 0 indica total transparência, 1 indica cor total(sem transparência).</p>
+
+<div id="grad1"></div>
+</body>
+</html>
+
+vai da esquerda para direita começando com o branco e indo para a cor vermelha forte.
+
+
+*Propriedade - repeating-linear-gradient
+permite que sua definição de background seja repetida na tela no tamanho da sua box. 
+-->
+
+<!-- Exemplo prático da propriedade repeating-linear-gradient -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background-color: red;/* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);  /* deve ser o último código. 
+
+  como vc pode observar nesse código podemos definir quantos porcento de espaço uma cor irá ocupar na nossa box.   yellow 10% */
+}
+
+#grad2 {
+  height: 200px;
+  background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);  /* deve ser o último código. */
+}
+
+#grad3 {
+  height: 200px;
+  background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);  /* deve ser o último código. */
+}
+
+#grad4 {
+  height: 200px;
+  background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);  /* deve ser o último código. */
+}
+</style>
+</head>
+<body>
+
+<h1>Repeating Linear Gradient</h1>
+
+<div id="grad1"></div>
+
+<p>Um gradiente repetido direcionado em 45 graus começando vermelho e terminando verde:</p>
+<div id="grad2"></div>
+
+<p>Um gradiente repetido direcionado em 190 graus começando vermelho e terminando verde:</p>
+<div id="grad3"></div>
+
+<p>Um gradiente repetido direcionado em 90 graus começando vermelho e terminando verde:</p>
+<div id="grad4"></div>
+
+<p><strong>Note:</strong> Alguns navegadores não suportam os gradients, como a internet explore 9 e versões mais novas.</p>
+
+
+</body>
+</html>

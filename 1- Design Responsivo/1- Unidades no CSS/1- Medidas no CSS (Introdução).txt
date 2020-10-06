@@ -1,0 +1,32 @@
+Medidas Absolutas e Medidas relativas.
+
+É essencial para começar a aplicar um design responsivo nos projetos ter 
+certo conhecimento sobre as Medidas Relativas e Absolutas.
+
+ABSOLUTAS: pixel(px)          |   RELATIVAS: porcentages(%)
+           inches(in)         |              font-size(em/rem)
+           centimeters(cm)    |              character-sizes(ex/ch)
+           milimeters(mm)     |              viewport dimensions(vw/vh)
+           paica(pc)          |              viewport max (vmax)
+           points(pt)         |              viewport min (vmin)
+ 
+Como cada uma funciona e se comporta dentro de um projeto hipotético?
+
+*Absolutas: Essas são as mais comuns que vemos no dia a dia. 
+São medidas que não estão referenciadas a qualquer outra unidade, ou seja, não dependem de um valor de referência. 
+São unidades de medidas definidas pela física, como o píxel, centímetro, metro, etc...
+Essas medidas são fixas e não mudam de acordo com as especificações do dispositivo. 
+Esse tipo de medida é indicada para quando conhecemos perfeitamente as características físicas e as configurações das mídias onde serão exibidos nossos projetos.
+
+*Relativas: Essas são as que normalmente não estamos habituados. 
+Essas medidas são calculadas tendo como base uma outra unidade de medida definida.
+O uso delas é mais apropriado para que possamos fazer ajustes em diferentes dispositivos garantindo um layout consistente e fluido em diversas mídias.
+Devido ao fato de que essas medidas são calculadas pelo browser baseando-se em outra unidade, elas tendem a ser bastante flexíveis. 
+Ou seja, podemos ter resultados diferentes de acordo com o ambiente.
+
+
+                                 
+**Recomendação de pesquisa: https://www.w3schools.com/css/css_units.asp
+                            https://tableless.com.br/unidade-pixels-em-rem/
+                            https://www.alura.com.br/artigos/guia-de-unidades-no-css
+                            Vídeo aula sobre unidades flexíveis no CSS -->  https://youtu.be/etM0JBeFbf8 (parte 1)  https://youtu.be/g__c-7M9Xzk (parte 2)

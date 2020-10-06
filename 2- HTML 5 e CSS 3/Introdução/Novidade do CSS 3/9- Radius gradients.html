@@ -1,0 +1,89 @@
+<!-- Introduzindo uma nova propriedade do CSS 3, Gradient background.
+
+temos 2 tipos de gradientes:
+
+Linear Gradients (vai down/up/left/right/diagonally)
+*Radial Gradients (definido pelo centro)
+
+Nomeclatura: 
+background: radial-gradient(o estilo da forma(shape), *size  at (posição da figura) top/bottom  ritght/left ou center, primeira cor, ..., última cor);
+
+O padrão, shape é ellipse, size é farthest-corner, e position é center.
+
+
+**O estilo da forma pode ser: circle ou ellipse, sendo ellipse o padrão.
+
+background: radial-gradient(circle, red, yellow, green);
+
+
+**Espaçamento das cores dentro da forma radius: 
+
+background: radial-gradient(red 5%, yellow 15%, green 60%);
+-->
+
+
+<!-- *Size keywords: permite ajustar o tamanho da figura formada pelo radius gradient.
+
+Temos as seguintes size keywords:
+
+closest-side
+farthest-side
+closest-corner
+farthest-corner
+-->
+
+<!-- agr um exemplo prático da propriedade acima -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 150px;
+  width: 150px;
+  background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);/* deve ser o último código. */
+}
+
+#grad2 {
+  height: 150px;
+  width: 150px;
+  background-color: red;/* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black); /* deve ser o último código. */
+}
+
+#grad3 {
+  height: 150px;
+  width: 150px;
+  background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black); /* deve ser o último código. */
+}
+
+#grad4 {
+  height: 150px;
+  width: 150px;
+  background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black); /* deve ser o último código. */
+}
+</style>
+</head>
+<body>
+
+<h1>Radial Gradients - size keywords</h1>
+
+<h2>closest-side:</h2>
+<div id="grad1"></div>
+
+<h2>farthest-side:</h2>
+<div id="grad2"></div>
+
+<h2>closest-corner:</h2>
+<div id="grad3"></div>
+
+<h2>farthest-corner (padrão):</h2>
+<div id="grad4"></div>
+
+<p><strong>Note:</strong> Alguns navegadores não suportam os gradients, como a internet explore 9 e versões mais novas.</p>
+
+</body>
+</html>

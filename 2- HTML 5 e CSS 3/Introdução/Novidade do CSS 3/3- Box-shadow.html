@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+	<head>
+		<title>Meu Site</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Descrição do meu site." />
+		<meta name="keywords" content="palavras,separadas,por,virgula" />
+		<meta name="author" content="Guilherme">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+	<!--	<link href="css/style.css" rel="stylesheet" /> -->
+
+	<!-- nova propriedade do CSS 3, box shadow. 
+
+		Efeito de sombra.
+
+	-->
+	<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+div.box{
+	text-align: center;
+}
+
+div.box img{
+	width: 20%;
+	-webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+	
+box-shadow: 10px     10px     23px     0px    rgba(0,0,0,0.75);
+       /*HORIZONTAL VERTICAL  BLUR  Raio de propagação   COR  */
+
+</style>
+	</head>
+
+	<body>
+
+		<div class="box">
+			<img src="imagens/alan.jpg" /> <!--imagem -->
+		</div><!--box-->
+	</body>
+
+
+
+</html>

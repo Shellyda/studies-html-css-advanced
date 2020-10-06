@@ -1,0 +1,101 @@
+<!-- Viewport é um conceito que surge com a necessidade de adptar sites para os dispositivos móveis, junto com o desenvolvimento do design adaptativo e o web design.
+
+Faz referência à área disponível para redenderizar uma página web, ou seja, a área visível do navegador (Excluindo a Barra de busca, marcadores, abas e demais coisas do navegador). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Título do meu site</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"> <!-- Importante meta tag para o design responsivo!! Fazendo com que o navegador indentifique a largura do tipo de tela que o usuário possue(Área disponível para renderizar, no caso toda a largura do viewport do dispositivo), definindo também uma escala inicial e máxima de 1.0(Nível de zoom). -->
+
+<!-- Exemplos para Introdução do tema de media queries:
+
+Media queries are a popular technique for delivering a tailored style sheet to different devices. To demonstrate a simple example, we can change the background color for different devices.
+
+-->
+
+<!-- @media screen and (MIN-WIDTH: CONDIÇÃO) LARGURA MINIMA 
+
+obs: existe o @media screen and (MIN-HEIGHT: condição) ALTURA MINIMA segue a msm lógica. -->
+<style>
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+
+#menulist {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div id="leftsidebar">
+    <ul id="menulist">
+      <li class="menuitem">Menu-item 1</li>
+      <li class="menuitem">Menu-item 2</li>
+      <li class="menuitem">Menu-item 3</li>
+      <li class="menuitem">Menu-item 4</li>
+      <li class="menuitem">Menu-item 5</li>
+    </ul>
+  </div>
+  
+  <div id="main">
+    <h1>Redimensione a tela do seu navegador para ver o efeito!</h1>
+    <p>Esse exemplo mostra que esses menus irão ser flutuados para esquerda da página se o viewport for 480px ou maior. Se o viewport for insuficiente (menor que 480px), o menu ficará no topo do conteúdo.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  background-color: pink;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Redimensione a Página do seu Navegador e veja o efeito!</h1>
+<p>A media querie so vai ser aplicada se o tipo de tela for 480px ou maior</p>
+
+</body>
+</html>
+
+-->

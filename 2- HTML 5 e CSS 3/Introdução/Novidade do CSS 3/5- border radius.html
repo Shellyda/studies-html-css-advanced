@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <!-- ESTRUTURA DE METATAGS DO HTML 5 -->
+	<head>
+		<title>Meu Site</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Descrição do meu site." />
+		<meta name="keywords" content="palavras,separadas,por,virgula" />
+		<meta name="author" content="Guilherme">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		<!-- <link href="css/style.css" rel="stylesheet" /> -->
+<style>
+			*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+/* Nova propriedade do CSS 3
+
+ Aprendendo a utilizar o border-radius + responsivo 
+
+ essa propriedade deixa a borda da box arredondada, vc pode especificar quais bordas vc quer aplicar esse efeito;
+
+ Assim:
+
+ border-bottom-left-radius
+ border-bottom-right-radius
+ border-top-left-radius 
+ border-top-right-radius
+
+ou pode aplicar diretamente em todas as bordas da box.
+
+dessa forma: border-radius
+
+ */
+
+/* Efeito de círculo responsivo */
+
+.box{
+	/* fazendo a box ser um quadrado */
+	width:30%;
+	padding-top:30%;
+ 
+	margin:50px auto;
+	position: relative;
+}
+
+.teste{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: black;
+}
+
+</style>
+		
+</head>
+<body>
+
+		<div class="box"> 
+			<div class="teste"></div> <!-- teste -->
+		</div><!-- box -->
+	
+
+		
+</body>
+</html>

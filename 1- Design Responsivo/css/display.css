@@ -1,0 +1,62 @@
+*{
+margin:0; 
+padding:0;
+box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+}
+
+/* Usando DISPLAY */
+
+.container{ 
+   padding: 30px 0;
+   margin: 0 auto;
+   background-color: #ccc;
+   text-align: center;
+}
+
+.box{
+	 display: inline-block;
+	 width: 25%; 
+	 height: 150px;
+	 margin-right: -4px;
+	 margin-bottom: -4px;
+	 background-color: purple;
+	 border: 2px solid black;
+}
+
+/*Impedir a criação de uma scroll barra na horizontal -> para resolver esse tipo de situação tb podemos usar a propriedade overflow: hidden; mas em alguns casos isso pode "cortar" os elementos da tela. */
+.box:last-child{
+	margin-right: 0; 
+}
+
+/* Quando a tela for 768px ou menos a largura da box vai aumentar para 50% forçando por falta de espaço a descida de 2 dessas caixas para baixo. */ 
+@media screen and (max-width: 768px){
+     
+	.container{
+		text-align: left;
+		padding:2% 20px; /* criando certo espaçamento para que as boxs não ocupem 100% da largura da tela. */
+	}
+
+	.box{
+		width: 50%;
+	}
+
+    /* com a nova organização a segunda box cria o msm problema que a última antes da redimensão de tela, para evitar que a scroll barra na horizontal apareça devemos tirar sua margem. */
+	.box:nth-of-type(2){
+		margin-right: 0;
+	}
+	
+
+/* quando chegar em 500px quero que as boxs ganhem uma largura de 100% forçando com que fiquem uma em cima da outra. conservando as definições anteriores do container */
+}
+
+@media screen and (max-width: 500px){
+	
+	.box{
+		width: 100%;
+		height: 100px;
+	}
+}

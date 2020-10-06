@@ -1,0 +1,45 @@
+
+/* exemplo prático */
+
+.transform{
+	text-align: center;
+	width: 40%;
+	max-width: 500px;
+	height: 500px;
+	border:3px solid purple;
+	border-radius: 8px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.transform:hover {
+transition: 2s;
+transition-timing-function: ease-out;
+-ms-transform:translate(-50%,-50%);
+transform: translate(-50%,-50%);
+animation-delay: 2s;
+animation-iteration-count: 3; /* define quantas vezes a animação vai se repetir, repetir infinitamente. */
+animation-name: animacao;
+animation-duration: 4s;
+
+}
+
+/* Perceba que podemos usar + de uma propriedade do transform */
+@keyframes animacao{
+	0%{
+		transform:translate(-50%,-50%) rotateY(0deg);
+	}
+
+	50%{
+		transform:translate(-50%,-50%) rotateY(180deg);
+	}
+
+	75%{
+		transform:translate(-50%,-50%) rotateY(0deg);
+	}
+
+	100%{
+		transform:translate(50%,50%) rotateY(0deg)
+	}
+}

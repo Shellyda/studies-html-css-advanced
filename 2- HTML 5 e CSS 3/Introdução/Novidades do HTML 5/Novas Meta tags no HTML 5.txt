@@ -1,0 +1,20 @@
+Novas meta tags no HTML 5.
+
+Isso por conta da nova realidade que estamos inseridos atualmente, onde há essa necessidade de destacar, diferenciar, nosso conteúdo, nossos sites dos demais e ,dessa forma, conseguir atrair um público-alvo. 
+Isso se chama SEO(Search Engine Optimization), otimização para ferramentas de busca que tem como objetivo facilitar o contato entre o produtor de conteúdo e o seu público.
+
+É um processo de melhoria de "Ranking"(visibilidade) de um site que considera como os artifícios de pesquisa funcionam, um exemplo básico disso pode ser: 
+"O que as pessoas pesquisam? 
+Qual os assuntos que essas pessoas demonstram ter mais interesse?
+Quais palasvras, termos, elas usam? (keywords)."
+
+Convém, então, ressaltar que usando os Meta dados(meta tags) como aliados na construção do seu website, fica mais facíl os navegadores indendificarem o que é (um blog, uma landing page, um artigo...), sobre o que aborda sua página e para quem eles deveriam recomendar ela. 
+
+Perceba que é preciso ter um estudo de maketing para definir a "persona" do público que quer causar impacto, agregar valor para essas pessoas através do seu produto e/ou serviço. 
+
+Exemplos de novas meta tags no HTML 5:
+
+                <meta name="description" content="Descrição do meu site." />
+		<meta name="keywords" content="palavras,separadas,por,virgula" />
+		<meta name="author" content="Guilherme"> 
+		<meta name="viewport" content="width=device-width,initial-                            scale=1.0,maximum-scale=1.0" />

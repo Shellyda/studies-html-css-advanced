@@ -1,0 +1,174 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <!-- ESTRUTURA DE METATAGS DO HTML 5 -->
+	<head>
+		<title>Meu Site</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Descrição do meu site." />
+		<meta name="keywords" content="palavras,separadas,por,virgula" />
+		<meta name="author" content="Guilherme">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		<!-- <link href="css/style.css" rel="stylesheet" /> -->
+		
+	
+
+<!-- Introduzindo uma nova propriedade do CSS 3, Key frames e Animation 
+
+Animation e suas derivadas:
+
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function (segue as msm definições e valores do Transition)
+animation-fill-mode
+
+Key frames: serve para manipular os frames da animação.
+
+--> 
+
+
+<style>
+
+	.box{
+		position: relative; /* permitir melhor manipulação da posição na tela */
+		width: 300px;
+        height: 300px;
+        background-color: purple;
+        margin: 0 auto;
+
+        animation-name: anime1; /*definindo o nome da animação */
+        animation-duration: 4s; /* tempo total da animação */
+
+        animation-delay: 1s; 
+
+        animation-iteration-count: infinite; /* define quantas vezes a animação vai se repetir, repetir infinitamente. */
+         
+        animation-timing-function: linear; /* padrão = ease */
+
+       
+/*  
+animation-direction 
+
+A propriedade de direção da animação especifica se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.
+
+essa propriedade pode ter esses valores:
+
+normal - a animação é reproduzida normalmente (para frente). Isso é o padrão
+
+reverse - a animação é reproduzida na direção reversa (para trás)
+
+alternate - A animação é reproduzida primeiro para frente e depois para trás
+
+alternate-reverse - a animação é reproduzida primeiro para trás e depois para frente
+
+*/
+
+ 
+
+
+ /* animation-fill-mode */
+
+ /* As animações CSS não afetam um elemento antes da execução do primeiro keyframe ou após a execução do último keyframe. 
+
+ A propriedade animation-fill-mode pode substituir esse comportamento.
+
+A propriedade animation-fill-mode especifica um estilo para o elemento de destino quando a animação não está sendo reproduzida (antes de iniciar, depois de terminar ou ambas).
+
+A propriedade animation-fill-mode pode ter os seguintes valores:
+
+none - valor padrão. A animação não aplicará nenhum estilo ao elemento antes ou depois da execução.
+
+forwards - O elemento manterá os valores de estilo definidos pela última keyframe (depende da direção da animação e da contagem de iterações da animação).
+
+backwards- O elemento obterá os valores de estilo definidos pela primeira keyframe (depende da direção da animação) e o manterá durante o período de atraso da animação.
+
+both- A animação seguirá as regras para frente e para trás, estendendo as propriedades da animação nas duas direções.
+
+*/
+
+	
+	}
+    
+    @keyframes anime1{
+    /* podemos fazer dessa maneira ou usando porcentagem para ter melhor controle do processo 
+    
+    from{
+    	 left: 0;
+    	 top: 0;
+    	 background: pink;
+    }
+
+    to{
+    	width: 150px;
+    	height: 150px;
+    	background: blue;
+    	left: 300px;
+    	top: 100px;
+    }
+    
+     A MSM SITUAÇÃO ACIMA COM PORCENTAGEM: 
+
+    0%{
+    	 left: 0;
+    	 top: 0;
+    	 background: pink;
+    }
+
+    100%{
+    	width: 150px;
+    	height: 150px;
+    	background: blue;
+    	left: 300px;
+    	top: 100px;
+    }
+
+    */
+
+    0%{
+    	 left: 0;
+    	 top: 0;
+    	 background: pink;
+    }
+
+    25%{
+    	width: 150px;
+    	height: 150px;
+    	background: blue;
+    	left: 300px;
+    	top: 100px;
+    }
+
+    45%{
+    	width: 100px;
+    	height: 100px;
+    	background: orange;
+    	left: 250px;
+    	top:200px;
+    }
+
+    75%{
+    	width: 50px;
+    	height: 50px;
+    	background: red;
+    	left: 40px;
+    	top: 40px;	
+    }
+
+    100%{ 
+          top: 0;
+          left: 0;
+    	 background: pink;
+     }
+}
+	
+</style>
+
+<body>
+	<div class="box"></div> <!-- box -->
+</body>
+
+</head>

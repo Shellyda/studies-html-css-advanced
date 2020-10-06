@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <!-- ESTRUTURA DE METATAGS DO HTML 5 -->
+	<head>
+		<title>Meu Site</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Descrição do meu site." />
+		<meta name="keywords" content="palavras,separadas,por,virgula" />
+		<meta name="author" content="Guilherme">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		<!-- <link href="css/style.css" rel="stylesheet" /> -->
+		
+	
+
+<!-- Introduzindo uma nova propriedade do CSS 3, Gradient background.
+
+temos 2 tipos de gradientes:
+
+*Linear Gradients (vai down/up/left/right/diagonally)
+Radial Gradients (definido pelo centro)
+
+Nomeclatura: 
+background: linear-gradient(direção, color-stop1, color-stop2, ...);
+
+obs:
+
+**vc deve definir pelomenos 2 cores e se a direção não for definida o navegador vai seguir o padrão que começa de cima pra baixo(top to bottom). 
+
+to bottom - começa de cima e vai pra a parte de baixo da box.
+to top - vai de baixo pra cima.
+
+**Alguns navegadores não suportam os gradients, como a internet explore 9 e versões mais novas. 
+
+Importante fazer um plano b:
+{
+background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+background-image: linear-gradient(to right, red , yellow); /* deve ser o último código. */
+}
+
+
+*Linear-gradient - to left e to right 
+
+to left - vai da direita para esquerda 
+
+background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+background-image: linear-gradient(to left, red , yellow); /* deve ser o último código. */
+
+começa com o vermelho no lado direito e faz um transição para o amarelo no lado esquerdo.
+
+to right - vai da esquerda para direita
+
+background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+background-image: linear-gradient(to right, blue, green); /* deve ser o último código. */
+
+começa com o azul no lado esquerdo e termina com o verde no lado direito.
+
+
+
+*Linear gradient - diagonal
+
+criando um efeito na diagonal: vc tem q definir 2 posições para ser construido esse efeito.
+
+temos essas definições: 
+
+to bottom right 
+to bottom left 
+to top left 
+to top right - começa da parte de baixo a esquerda e acaba em cima na direita.
+
+exemplo: 
+
+/* começa da parte de cima na esquerda e vai para baixo a direita. */
+background: linear-gradient(to bottom right, blue, red);
+
+ -->
+
+
+
+<!-- podemos usar ângulos para definir a direção tb !! exemplo prático: -->
+<style>
+
+#grad1 {
+  height: 100px;
+  background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: linear-gradient(0deg, red, yellow);  /* deve ser o último código. */
+}
+
+#grad2 {
+  height: 100px;
+  background-color: red;  /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: linear-gradient(90deg, red, yellow);  /* deve ser o último código. */
+}
+
+#grad3 {
+  height: 100px;
+  background-color: red; /* isso será mostrado para os navegadores que não suportam os gradients*/ 
+  background-image: linear-gradient(180deg, red, yellow);  /* deve ser o último código. */
+}
+
+#grad4 {
+  height: 100px;
+  background-color: red;  /* isso será mostrado para os navegadores que não suportam os gradients*/
+  background-image: linear-gradient(-90deg, red, yellow); /* deve ser o último código. */
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradients - usando diferente ângulos</h1>
+
+<div id="grad1" style="text-align:center;">0deg</div><br>
+<div id="grad2" style="text-align:center;">90deg</div><br>
+<div id="grad3" style="text-align:center;">180deg</div><br>
+<div id="grad4" style="text-align:center;">-90deg</div>
+
+<p><strong>Note:</strong> Alguns navegadores não suportam os gradients, como a internet explore 9 e versões mais novas.</p>
+
+</body>
+</html>
+
+	
+

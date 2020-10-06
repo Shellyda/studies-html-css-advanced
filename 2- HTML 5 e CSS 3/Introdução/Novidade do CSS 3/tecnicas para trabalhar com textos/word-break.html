@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <!-- ESTRUTURA DE METATAGS DO HTML 5 -->
+	<head>
+		<title>Meu Site</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Descrição do meu site." />
+		<meta name="keywords" content="palavras,separadas,por,virgula" />
+		<meta name="author" content="Guilherme">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		<!-- <link href="css/style.css" rel="stylesheet" /> -->
+
+		<style >
+*{
+	 margin:0;
+	 padding:0;
+	 box-sizing: border-box;
+}
+
+
+p {
+  width: 140px; 
+  border: 1px solid #000000;
+}
+
+p.f {
+  word-break: normal;
+}
+
+p.e {
+  word-break: keep-all;
+}
+
+p.d {
+  word-break: break-all;
+}
+
+
+</style>
+
+</head>
+
+<!-- REDIMENSIONE A TELA PARA PERCEBER A AÇÃO DESSAS PROPRIEDADES ABAIXO -->
+<body>
+
+
+<h1>A propriedade word-break </h1>
+
+<h2>word-break: normal (PADRÃO):</h2>
+<p class="f">Essaéumapalavra longaaaaaaaaaaaaaaaaaa. As palavras vão quebrar de acordo com as regras usuais.</p>
+
+<h2>word-break: keep-all:</h2>
+<p class="e">Essaéumapalavralongaaaaa. Este-texto-quebrará-em-hífens.</p>
+
+<h2>word-break: break-all:</h2>
+<p class="d">Essaéumapalavralongaaaaa. Este texto vai ser quebrado para caber dentro da box sem ultrapassar o limite.</p>
+	
+
+
+</body>
+</html>
