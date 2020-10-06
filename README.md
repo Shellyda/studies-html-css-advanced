@@ -10,7 +10,6 @@
     <li>Conhecendo Media queries</li>
     <li>Novos Displays: Table e Grid</li>
     <li>Manipulação de imagens</li>
-    <li>Canvas - Um elemento da HTML5 destinado a delimitar uma área para renderização dinâmica de gráficos</li>
-    <li>SVG - Uma linguagem XML para descrever de forma vetorial desenhos e gráficos bidimensionais</li>
-    <li>Animate.css - Biblioteca de animações!</li>
+    <li>Canvas e SVG - renderização dinâmica de gráficos</li>
+    <li>Biblioteca de animações: Animate.css</li>
  </ul>
