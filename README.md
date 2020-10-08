@@ -1,4 +1,4 @@
-# Avancado-HTML-CSS
+# Técnicas avançadas de HTML5 e CSS3
  O estudo mais aprofundado sobre as codificações HTML5 e CSS3.
 
  <ul>
