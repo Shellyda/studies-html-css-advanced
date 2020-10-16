@@ -16,6 +16,6 @@
 
 <h3>Projetos:</h3>
 <ul>
-<li><a href="">Galeria de imagens responsiva</a> (se adapta a qualquer tipo de tela)</li>
+<li><a href="https://github.com/Shellyda/Avancado-HTML-CSS/tree/main/Projetos/Galeria%20Responsiva">Galeria de imagens responsiva</a> (se adapta a qualquer tipo de tela)</li>
 <li><a href="">Landing Page</a> (Site focado na apresentação de uma empresa/pessoa, seus objetivos e serviços)</li>
 </ul>
