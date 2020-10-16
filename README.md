@@ -13,3 +13,9 @@
     <li>Canvas e SVG - renderização dinâmica de gráficos</li>
     <li>Biblioteca de animações: Animate.css</li>
  </ul>
+
+<h3>Projetos:</h3>
+<ul>
+<li><a href="">Galeria de imagens responsiva</a> (se adapta a qualquer tipo de tela)</li>
+<li><a href="">Landing Page</a> (Site focado na apresentação de uma empresa/pessoa, seus objetivos e serviços)</li>
+</ul>
