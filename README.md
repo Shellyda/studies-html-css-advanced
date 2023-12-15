@@ -1,21 +1,31 @@
-# Técnicas avançadas de HTML5 e CSS3
- O estudo mais aprofundado sobre as codificações HTML5 e CSS3.
+# Advanced HTML5 and CSS3 Techniques
 
- <ul>
- 	<h2>Pontos principais:</h2>
- 	<li>Técnicas avançadas para Desenvolvimento Web</li>
- 	<li>As Unidades do CSS</li>
- 	<li>O Conceito Viewport</li>
-    <li>Implementando o Design Responsivo</li>
-    <li>Conhecendo Media queries</li>
-    <li>Novos Displays: Table e Grid</li>
-    <li>Manipulação de imagens</li>
-    <li>Canvas e SVG - renderização dinâmica de gráficos</li>
-    <li>Biblioteca de animações: Animate.css</li>
- </ul>
+Support repository for a more in-depth study of HTML5 and CSS3 coding with practical projects.
 
-<h3>Projetos:</h3>
-<ul>
-<li><a href="https://github.com/Shellyda/Avancado-HTML-CSS/tree/main/Projetos/Galeria%20Responsiva">Galeria de imagens responsiva</a> (se adapta a qualquer tipo de tela)</li>
-<li><a href="https://github.com/Shellyda/Projeto-Site-LandingPage">Landing Page</a> (Site focado na apresentação de uma empresa/pessoa, seus objetivos e serviços)</li>
-</ul>
+## Overview
+
+Welcome! This repository is dedicated to providing an in-depth study of advanced HTML5 and CSS3 coding techniques, complemented by practical projects.
+
+### Main Points:
+
+- Advanced techniques for web development
+- Understanding CSS units
+- The Viewport concept
+- Implementing Responsive Design
+- Exploring Media Queries
+- New Displays: Table and Grid
+- Image manipulation
+- Canvas and SVG - dynamic rendering of graphics
+- Animation library: Animate.css
+
+## Projects:
+
+1. **[Responsive Image Gallery](https://github.com/Shellyda/studies-html-css-advanced/tree/main/Projetos/Galeria%20Responsiva)**
+   - A responsive image gallery that adapts to various screen sizes.
+
+2. **[Landing Page](https://github.com/Shellyda/simple-ladingpage)**
+   - A website focused on presenting a company/person, their objectives, and services through an engaging landing page.
+
+Feel free to explore each project folder for detailed instructions and hands-on practice with advanced HTML5 and CSS3 concepts.
+
+Happy coding!
