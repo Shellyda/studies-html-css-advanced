@@ -23,7 +23,7 @@ Welcome! This repository is dedicated to providing an in-depth study of advanced
 1. **[Responsive Image Gallery](https://github.com/Shellyda/studies-html-css-advanced/tree/main/Projetos/Galeria%20Responsiva)**
    - A responsive image gallery that adapts to various screen sizes.
 
-2. **[Landing Page](https://github.com/Shellyda/simple-ladingpage)**
+2. **[Landing Page](https://github.com/Shellyda/simple-html-css-onepage)**
    - A website focused on presenting a company/person, their objectives, and services through an engaging landing page.
 
 Feel free to explore each project folder for detailed instructions and hands-on practice with advanced HTML5 and CSS3 concepts.
